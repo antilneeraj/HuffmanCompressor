@@ -65,4 +65,8 @@ public class HuffmanEncoder {
             }
         }
     }
+
+    public Map<Character, String> getHuffmanCodes() {
+        return huffmanCodes;
+    }
 }

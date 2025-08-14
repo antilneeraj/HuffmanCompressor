@@ -9,7 +9,11 @@ import java.util.Map;
 public class HuffmanDecoder {
     private HuffmanNode root;
 
-    private void buildTree(Map<Character, Integer> freqMap) {
+    public HuffmanNode getRoot() {
+        return root;
+    }
+
+    public void buildTree(Map<Character, Integer> freqMap) {
         var pq = new java.util.PriorityQueue<HuffmanNode>();
         for (var entry : freqMap.entrySet()) {
             pq.add(new HuffmanNode(entry.getKey(), entry.getValue()));
