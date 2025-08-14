@@ -14,12 +14,20 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
-buildDir = file("out")
+layout.buildDirectory = file("out")
 
 tasks.test {
     useJUnitPlatform()
 }
 
 tasks.jar {
-    destinationDirectory.set(file("$buildDir/libs"))
+    manifest {
+        attributes["Main-Class"] = "com.huffman.Main"
+    }
+    from({
+        configurations.runtimeClasspath.get()
+            .filter { it.name.endsWith("jar") }
+            .map { zipTree(it) }
+    })
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
