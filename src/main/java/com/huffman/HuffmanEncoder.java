@@ -1,8 +1,6 @@
 package com.huffman;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -37,10 +35,8 @@ public class HuffmanEncoder {
         }
     }
 
-    // Read file, build huffman tree, compress to file
     public void compressFile(String inputFile, String outputFile) throws IOException {
-        // Read file into string
-        String text = Files.readString(Path.of(inputFile));
+        String text = FileHandler.readTextFile(inputFile);
 
         // Build frequency map
         Map<Character, Integer> freqMap = new HashMap<>();
@@ -51,16 +47,21 @@ public class HuffmanEncoder {
         // Build Huffman tree
         buildTree(freqMap);
 
-        try (FileOutputStream fos = new FileOutputStream(outputFile);
-             ObjectOutputStream oos = new ObjectOutputStream(fos);
-             BitOutputStream bitOut = new BitOutputStream(fos)) {
+        try (DataOutputStream dos = FileHandler.getDataOutputStream(outputFile)){
 
-            // Write code map to header
-            oos.writeObject(huffmanCodes);
+            // ----- Optimized header -----
+            dos.writeInt(freqMap.size()); // Number of unique chars
+            for (var entry : freqMap.entrySet()) {
+                dos.writeChar(entry.getKey()); // Char (2 bytes in Java char storage)
+                dos.writeInt(entry.getValue()); // Frequency (4 bytes)
+            }
+            // ----------------------------
 
-            // Encode file content
-            for (char c : text.toCharArray()) {
-                bitOut.writeBits(huffmanCodes.get(c));
+            // write bitstream (encoded file content)
+            try (BitOutputStream bitOut = FileHandler.getBitOutputStream(dos)) {
+                for (char c : text.toCharArray()) {
+                    bitOut.writeBits(huffmanCodes.get(c));
+                }
             }
         }
     }
