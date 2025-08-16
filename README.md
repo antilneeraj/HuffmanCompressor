@@ -4,7 +4,7 @@
 [![Gradle](https://img.shields.io/badge/Gradle-8.14-green.svg)](https://gradle.org/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
-[![](https://mermaid.ink/img/pako:eNpNkcFrwyAUxv-VxzttYIqxcUk87LCOXcYYrGOHNT3YxKZCo8EYSFr6v88s66h48Ht-v_c98YylrRQKHMbyIJ2PdsrLwkBYXvujggJXtmmd6jptDXxIry1E8O50rY08wlcH13tVFTiTQyQH3QX0RYcOn2OrCoTNPzNVyQ32W9jO6HhF1_qk4E4beH26DzSFKHqEmFI6-3bSwWaSBBJOt0iwUa6RugpPOU-WAv1BNSFYhOPehiQ_jXcJTtl7ux5NicK7XhF0tq8PKPby2AXVt5X06lnL2snmamml-bb2VqI444DigS5YknFGszhN4iTnBEcUeb6IecbyOE85Y3m6vBA8_fJ0kS15TjlNw16yhDGCtZvG_ot3ylTKrWxvPApGE4Kq0t66t_mbSmv2usbLDy3rh6w?type=png)](https://mermaid.live/edit#pako:eNpNkcFrwyAUxv-VxzttYIqxcUk87LCOXcYYrGOHNT3YxKZCo8EYSFr6v88s66h48Ht-v_c98YylrRQKHMbyIJ2PdsrLwkBYXvujggJXtmmd6jptDXxIry1E8O50rY08wlcH13tVFTiTQyQH3QX0RYcOn2OrCoTNPzNVyQ32W9jO6HhF1_qk4E4beH26DzSFKHqEmFI6-3bSwWaSBBJOt0iwUa6RugpPOU-WAv1BNSFYhOPehiQ_jXcJTtl7ux5NicK7XhF0tq8PKPby2AXVt5X06lnL2snmamml-bb2VqI444DigS5YknFGszhN4iTnBEcUeb6IecbyOE85Y3m6vBA8_fJ0kS15TjlNw16yhDGCtZvG_ot3ylTKrWxvPApGE4Kq0t66t_mbSmv2usbLDy3rh6w)
+<img width="1232" height="670" alt="image" src="https://github.com/user-attachments/assets/de7d0e24-55fa-48dc-820a-90ba08309fc4" />
 
 ## Table of Contents
 
