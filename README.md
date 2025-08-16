@@ -4,7 +4,7 @@
 [![Gradle](https://img.shields.io/badge/Gradle-8.14-green.svg)](https://gradle.org/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
-<img width="1232" height="670" alt="image" src="https://github.com/user-attachments/assets/de7d0e24-55fa-48dc-820a-90ba08309fc4" />
+<img width="1232" height="670" alt="Compression Ratio Graph" src="https://github.com/user-attachments/assets/de7d0e24-55fa-48dc-820a-90ba08309fc4" />
 
 ## Table of Contents
 
