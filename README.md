@@ -29,8 +29,8 @@
 
 ## Introduction
 
-This project implements a **lossless text file compression and decompression tool** using the **Huffman Coding algorithm
-**. The tool can efficiently compress text files by assigning variable-length binary codes to characters based on their
+This project implements a **lossless text file compression and decompression tool** using the **Huffman Coding algorithm**.
+The tool can efficiently compress text files by assigning variable-length binary codes to characters based on their
 frequency of occurrence, achieving compression ratios of typically 40-50% for text files.
 
 Huffman Coding is a greedy algorithm that builds an optimal prefix code tree, ensuring that no code is a prefix of
